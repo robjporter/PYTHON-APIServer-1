@@ -1,0 +1,14 @@
+{% extends "base2.html" %}
+
+{% block head %}
+  	{{ super() }}
+  	<meta description="test" />
+{% endblock %}
+{% block cssinclude %}
+	{{ super() }}
+  	<link href="{{ url_for('uikit.static', filename='css/custom.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+CONTENT
+{% endblock %}

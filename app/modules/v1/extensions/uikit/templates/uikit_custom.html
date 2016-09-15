@@ -1,0 +1,284 @@
+{% extends "base2.html" %}
+
+{% block head %}
+  	{{ super() }}
+  	<meta description="test" />
+{% endblock %}
+{% block cssinclude %}
+	{{ super() }}
+  	<link href="{{ url_for('uikit.static', filename='css/custom.css') }}" rel="stylesheet" type="text/css">
+  	<link href="{{ url_for('uikit.static', filename='css/uikit.docs.min.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block jsincludes %}
+	{{ super() }}
+  	<script src="{{ url_for('bower.static', filename='uikit/js/components/upload.min.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+	<span class="uk-color-label uk-color-label-danger uppercase">Mandatory</span>
+	<span class="uk-color-label uk-color-label-warning uppercase">Optional</span>
+	<span class="uk-color-label uk-color-label-success uppercase">Complete</span>
+	<span class="uk-color-label uk-color-label-info uppercase">Info</span>
+	<div class="fw-100">Font Weight 100</div>
+	<div class="fw-200">Font Weight 200</div>
+	<div class="fw-300">Font Weight 300</div>
+	<div class="fw-400">Font Weight 400</div>
+	<div class="fw-500">Font Weight 500</div>
+	<div class="fw-600">Font Weight 600</div>
+	<div class="fw-700">Font Weight 700</div>
+	<div class="extraextrasmall">Extra Extra Small</div>
+	<div class="extrasmall">Extra Small</div>
+	<div class="small">Small</div>
+	<div class="medium">Medium</div>
+	<div class="large">Large</div>
+	<div class="extralarge">Extra Large</div>
+	<div class="extraextralarge">Extra Extra Large</div>
+    <div style="margin-top:20px;" class="uk-container uk-container-center">
+      <div data-uk-alert class="uk-alert uk-alert-primary"><a class="uk-alert-close uk-close"></a>
+        <div class="uk-h3">Click on the panel title's to collapse the content; grab them to rearrange the panels</div>
+      </div>
+      <div data-uk-alert class="uk-alert uk-alert-success"><a class="uk-alert-close uk-close"></a>
+        <p>Resize your browser window, to experiment with the responsive layout<span class="uk-text-success uk-align-left uk-text-bold">TIP:</span></p>
+      </div>
+      <div data-uk-alert class="uk-alert uk-alert-danger"><a class="uk-alert-close uk-close"></a>
+        <div class="uk-h3">Click on the panel title's to collapse the content; grab them to rearrange the panels</div>
+      </div>
+      <div data-uk-alert class="uk-alert uk-alert-primary"><a class="uk-alert-close uk-close"></a>
+        <div class="uk-h3">Click on the panel title's to collapse the content; grab them to rearrange the panels<span class="uk-color-label uk-color-label-info uppercase uk-align-left">Info</span></div>
+      </div>
+      <div data-uk-alert class="uk-alert uk-alert-warning"><a class="uk-alert-close uk-close"></a>
+        <div class="uk-h3"> Content cannot be moved between grids.<span class="uk-badge uk-badge-warning uk-align-left uk-text-normal">Warning</span></div>
+      </div>
+      <div data-uk-alert class="uk-alert uk-alert-warning"><a class="uk-alert-close uk-close"></a>
+        <div class="uk-h3"> Content cannot be moved between grids.<span class="uk-text-warning uk-align-left uk-text-bold">Warning!</span></div>
+      </div>
+      <div data-uk-alert class="uk-alert uk-alert-warning"><a class="uk-alert-close uk-close"></a>
+        <div class="uk-h3"> Content cannot be moved between grids.<span class="uk-badge uk-badge-warning uk-align-left uk-text-large">Warning</span></div>
+      </div>
+      <table class="uikit-table bordered hover alternating no-margin" style="width:800px">
+		<thead>
+			<tr>
+				<th class="align-left">ID</th>
+				<th class="align-left">Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Will</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Steve</td>
+			</tr>
+		</tbody>
+	</table>
+	</br>
+	<div class="uikit-alert block" role="alert">
+    	<h4>System maintenance scheduled<a class="uk-alert-close uk-close" style="float:right"></a></h4>
+    	<p>Please note that, due to a platypus invasion on our datacenter early last morning, the servers will have to undergo a maintenance cleaning today at 23:00 GMT.</p>
+	</div>
+	<div class="uikit-alert block success" role="alert">
+    	<h4>System maintenance scheduled<a class="uk-alert-close uk-close" style="float:right"></a></h4>
+    	<p>Please note that, due to a platypus invasion on our datacenter early last morning, the servers will have to undergo a maintenance cleaning today at 23:00 GMT.</p>
+	</div>
+	<div class="uikit-alert block info" role="alert">
+    	<h4>System maintenance scheduled<a class="uk-alert-close uk-close" style="float:right"></a></h4>
+    	<p>Please note that, due to a platypus invasion on our datacenter early last morning, the servers will have to undergo a maintenance cleaning today at 23:00 GMT.</p>
+	</div>
+	<div class="uikit-alert block danger" role="alert">
+    	<h4>System maintenance scheduled<a class="uk-alert-close uk-close" style="float:right"></a></h4>
+    	<p>Please note that, due to a platypus invasion on our datacenter early last morning, the servers will have to undergo a maintenance cleaning today at 23:00 GMT.</p>
+	</div>
+	<div>
+      <div data-uk-grid-margin class="uk-grid uk-grid-small uk-sortable">
+      <div class="uk-width-medium-1-3 uk-width-large-1-5">
+          <div data-uk-accordion class="uk-accordion uk-primary-border-color uk-border-rounded">
+            <h3 class="uk-accordion-title uk-primary-color uk-sortable-handle">Panel 1<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <div class="uk-panel uk-panel-box">
+                <h3 class="uk-panel-title">Panel title</h3>
+                <p>
+                  The pirate drinks with power, fear the pacific ocean until it travels.
+                  Aye, old reef. go to prison. Ah, cloudy pegleg. you won't vandalize the captain's quarters. The doubloons tastes with grace, trade the quarter-deck.
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-medium-1-3 uk-width-large-1-5">
+          <div data-uk-accordion class="uk-accordion uk-info-border-color">
+            <h3 class="uk-accordion-title uk-info-color uk-sortable-handle">Article<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <div class="uk-article">
+                <div class="uk-article-title">Title</div>
+                <div class="uk-article-meta">Author, Date</div>
+              </div>
+              <div>
+                Spheroid dosis, to the colony. Honor, tragedy, and pressure.All of those species offer galactic, crazy planets.
+                Resist oddly like an apocalyptic space suit.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="uk-width-medium-1-3 uk-width-large-1-5">
+          <div data-uk-accordion class="uk-accordion uk-success-border-color">
+            <h3 class="uk-accordion-title uk-success-color uk-sortable-handle">Block<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <div class="uk-block uk-block-muted">
+                <h3>Title</h3>
+                <div>
+                  When the master of blessing remembers the relativities of the teacher, the heaven will know explosion of the light.
+                  The hypnosis of viewing therapists is remarkable. When one shapes truth and life, one is able to trap tantra.
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-medium-2-3 uk-width-large-2-5">
+          <div data-uk-accordion class="uk-accordion uk-danger-border-color uk-border-rounded">
+            <h3 class="uk-accordion-title uk-danger-color uk-sortable-handle">Table<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <table class="uk-table">
+                <caption>Table caption</caption>
+                <thead>
+                  <tr>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                  </tr>
+                  <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                  </tr>
+                  <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-h3 uk-margin">GRID 2</div>
+      <ul data-uk-grid-margin class="uk-grid uk-grid-small uk-grid-width-medium-1-3 uk-grid-width-large-1-5 uk-grid-width-xlarge-1-6 uk-sortable">
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 1<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 2<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 3<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 4<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 5<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 6<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 7<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 8<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-uk-accordion="data-uk-accordion" class="uk-accordion uk-border-rounded appAccordion">
+            <h3 class="uk-accordion-title uk-text-center uk-sortable-handle">Content 9<i class="uk-icon-chevron-down uk-align-right"></i></h3>
+            <div class="uk-accordion-content">
+              <p>
+                Never hear the believer, for you cannot acquire it. The self shapes suffering which is not abstruse. As i have felt you, so you must praise one another.
+                
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+{% endblock %}

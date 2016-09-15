@@ -1,0 +1,62 @@
+{% from '_helpers.html' import render_field %}
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+<head>
+  {% block head %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta http-equiv="cleartype" content="on">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+  <meta name="description" content="Description" />
+  <meta name="title" content="HOME"  />
+  <meta name="robots" content="noodp" />
+  <meta http-equiv="content-language" content="en-gb">
+  <link rel="shortcut icon" href="{{ url_for( 'static', filename='images/favicon.ico') }}" type="image/x-icon" />
+  {% endblock %}
+  <title>{% block title %}{% endblock %} -{% if toreverse %}Reversed( {{ toreverse | reverse }} ){% else %}HERE{% endif %}</title>
+  {% block cssinclude %}
+  <link href="{{ url_for('bower.static', filename='bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('bower.static', filename='font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('bower.static', filename='normalize.css/normalize.css') }}" rel="stylesheet" type="text/css">
+  <script src="{{ url_for('bower.static', filename='moment/min/moment.min.js') }}"></script>
+  {% endblock %}
+  {% block csscustom %}{% endblock %}
+</head>
+<body>
+  <div id="logo">
+    <img src="{{ url_for( 'static', filename='images/logo.png') }}" alt='Our Company Logo' height='100px' width='100px'>
+  </div>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class="flashes">
+        {% for message in messages %}
+          <div class="alert alert-warning">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message }}
+          </div>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  <div id="content">
+    {% block content %}{% endblock %}
+  </div>
+  <footer>
+    {{ format_price(0.33) }}
+    {% block footer %}
+      &copy; Copyright 2015 by RJPDesigns
+    {% endblock %}
+  </footer>
+
+  {% block jsincludes %}
+  <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ url_for('bower.static', filename='bootstrap/dist/js/bootstrap.min.js') }}"></script>
+  {% endblock %}
+  {% block jscustom %}
+  {% endblock %}
+</body>
+</html>

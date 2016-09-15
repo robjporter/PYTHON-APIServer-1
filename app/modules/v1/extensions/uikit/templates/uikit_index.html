@@ -1,0 +1,92 @@
+{% extends "base2.html" %}
+
+{% block head %}
+  	{{ super() }}
+  	<meta description="test" />
+{% endblock %}
+{% block cssinclude %}
+	{{ super() }}
+  	<link href="{{ url_for('uikit.static', filename='css/custom.css') }}" rel="stylesheet" type="text/css">
+  	<link href="{{ url_for('uikit.static', filename='css/uikit.docs.min.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+    <div class="uk-grid" data-uk-grid-margin>
+    	<article class="uk-article">
+    	<a href="{{ url_for( 'uikit.uikit_about' ) }}">About</a>
+    	<a href="{{ url_for( 'uikit.uikit_custom' ) }}">Custom</a>
+    	<a href="{{ url_for( 'uikit.uikit_index2' ) }}">Index 2</a>
+    	<h1 class="uk-article-title">Defaults</h1>
+    	<a href="{{ url_for( 'uikit.uikit_base' ) }}">Base</a>
+    	<h1 class="uk-article-title">Layout</h1>
+    	<a href="{{ url_for( 'uikit.uikit_articles' ) }}">Articles</a>
+    	<a href="{{ url_for( 'uikit.uikit_blocks' ) }}">Blocks</a>
+    	<a href="{{ url_for( 'uikit.uikit_comments' ) }}">Comments</a>
+    	<a href="{{ url_for( 'uikit.uikit_cover' ) }}">Cover</a>
+    	<a href="{{ url_for( 'uikit.uikit_dynamicgrid' ) }}">Dynamic Grid</a>
+    	<a href="{{ url_for( 'uikit.uikit_flex' ) }}">Flex</a>
+    	<a href="{{ url_for( 'uikit.uikit_grid' ) }}">Grid</a>
+    	<a href="{{ url_for( 'uikit.uikit_panels' ) }}">Panels</a>
+    	<a href="{{ url_for( 'uikit.uikit_utility' ) }}">Utility</a>
+    	<h1 class="uk-article-title">Navigation</h1>
+    	<a href="{{ url_for( 'uikit.uikit_breadcrumb' ) }}">Breadcrumb</a>
+    	<a href="{{ url_for( 'uikit.uikit_dotnav' ) }}">DotNav</a>
+    	<a href="{{ url_for( 'uikit.uikit_dynamicpagination' ) }}">Dynamic Pagination</a>
+    	<a href="{{ url_for( 'uikit.uikit_nav' ) }}">Nav</a>
+    	<a href="{{ url_for( 'uikit.uikit_navbar' ) }}">NavBar</a>
+    	<a href="{{ url_for( 'uikit.uikit_pagination' ) }}">Pagination</a>
+    	<a href="{{ url_for( 'uikit.uikit_slidenav' ) }}">SlideNav</a>
+    	<a href="{{ url_for( 'uikit.uikit_subnav' ) }}">SubNav</a>
+    	<a href="{{ url_for( 'uikit.uikit_tabs' ) }}">Tabs</a>
+    	<a href="{{ url_for( 'uikit.uikit_thumbnail' ) }}">Thumbnail</a>
+    	<h1 class="uk-article-title">Elements</h1>
+    	<a href="{{ url_for( 'uikit.uikit_descriptionlist' ) }}">Description List</a>
+    	<a href="{{ url_for( 'uikit.uikit_forms' ) }}">Forms</a>
+    	<a href="{{ url_for( 'uikit.uikit_lists' ) }}">Lists</a>
+    	<a href="{{ url_for( 'uikit.uikit_tables' ) }}">Tables</a>
+    	<h1 class="uk-article-title">Common</h1>
+    	<a href="{{ url_for( 'uikit.uikit_alerts' ) }}">Alerts</a>
+    	<a href="{{ url_for( 'uikit.uikit_animations' ) }}">Animations</a>
+    	<a href="{{ url_for( 'uikit.uikit_badges' ) }}">Badges</a>
+    	<a href="{{ url_for( 'uikit.uikit_buttons' ) }}">Buttons</a>
+    	<a href="{{ url_for( 'uikit.uikit_close' ) }}">Close</a>
+    	<a href="{{ url_for( 'uikit.uikit_column' ) }}">Column</a>
+    	<a href="{{ url_for( 'uikit.uikit_contrast' ) }}">Contrast</a>
+    	<a href="{{ url_for( 'uikit.uikit_formadvanced' ) }}">Form Advanced</a>
+    	<a href="{{ url_for( 'uikit.uikit_formfile' ) }}">Form File</a>
+    	<a href="{{ url_for( 'uikit.uikit_formpassword' ) }}">Form Password</a>
+    	<a href="{{ url_for( 'uikit.uikit_formselect' ) }}">Form Select</a>
+    	<a href="{{ url_for( 'uikit.uikit_icons' ) }}">Icons</a>
+    	<a href="{{ url_for( 'uikit.uikit_overlays' ) }}">Overlays</a>
+    	<a href="{{ url_for( 'uikit.uikit_placeholder' ) }}">Placeholder</a>
+    	<a href="{{ url_for( 'uikit.uikit_progress' ) }}">Progress</a>
+    	<a href="{{ url_for( 'uikit.uikit_text' ) }}">Text</a>
+    	<a href="{{ url_for( 'uikit.uikit_thumbnails2' ) }}">Thumbnails</a>
+    	<h1 class="uk-article-title">Javascript</h1>
+    	<a href="{{ url_for( 'uikit.uikit_accordion' ) }}">Accordion</a>
+    	<a href="{{ url_for( 'uikit.uikit_autocomplete' ) }}">Autocomplete</a>
+    	<a href="{{ url_for( 'uikit.uikit_datepicker' ) }}">Datepicker</a>
+    	<a href="{{ url_for( 'uikit.uikit_dropdowns' ) }}">Dropdowns</a>
+    	<a href="{{ url_for( 'uikit.uikit_htmleditor' ) }}">HTML Editor</a>
+    	<a href="{{ url_for( 'uikit.uikit_lightbox' ) }}">Lightbox</a>
+    	<a href="{{ url_for( 'uikit.uikit_modal' ) }}">Modal</a>
+    	<a href="{{ url_for( 'uikit.uikit_nestable' ) }}">Nestable</a>
+    	<a href="{{ url_for( 'uikit.uikit_notify' ) }}">Notify</a>
+    	<a href="{{ url_for( 'uikit.uikit_offcanvas' ) }}">Off Canvas</a>
+    	<a href="{{ url_for( 'uikit.uikit_parallax' ) }}">Parallax</a>
+    	<a href="{{ url_for( 'uikit.uikit_scroll' ) }}">Scroll</a>
+    	<a href="{{ url_for( 'uikit.uikit_search' ) }}">Search</a>
+    	<a href="{{ url_for( 'uikit.uikit_slider' ) }}">Slider</a>
+    	<a href="{{ url_for( 'uikit.uikit_slideset' ) }}">Slideset</a>
+    	<a href="{{ url_for( 'uikit.uikit_slideshow' ) }}">Slideshow</a>
+    	<a href="{{ url_for( 'uikit.uikit_smoothscroll' ) }}">Smooth Scroll</a>
+    	<a href="{{ url_for( 'uikit.uikit_sortable' ) }}">Sortable</a>
+    	<a href="{{ url_for( 'uikit.uikit_sticky' ) }}">Sticky</a>
+    	<a href="{{ url_for( 'uikit.uikit_switcher' ) }}">Switcher</a>
+    	<a href="{{ url_for( 'uikit.uikit_timepicker' ) }}">Timepicker</a>
+    	<a href="{{ url_for( 'uikit.uikit_toggle' ) }}">Toggle</a>
+    	<a href="{{ url_for( 'uikit.uikit_tooltip' ) }}">Tooltip</a>
+    	<a href="{{ url_for( 'uikit.uikit_upload' ) }}">Upload</a>
+        </article>
+    </div>
+{% endblock %}

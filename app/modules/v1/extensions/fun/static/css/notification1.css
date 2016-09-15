@@ -1,0 +1,136 @@
+[class^='star'],
+[class*=' star'] {
+  width: 6em;
+  height: 6em;
+  float: left;
+  margin: 0.5em;
+}
+
+.star3 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,7.5">        <polygon fill="#df2020" points="5, 0 5.86603, 4.5 9.33013, 7.5 5, 6 0.66987, 7.5 4.13397, 4.5" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star4 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,10">        <polygon fill="#df9f20" points="5, 0 6.76777, 3.23223 10, 5 6.76777, 6.76777 5, 10 3.23223, 6.76777 0, 5 3.23223, 3.23223" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star5 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,9.04508">        <polygon fill="#9fdf20" points="5, 0 6.17557, 3.38197 9.75528, 3.45492 6.90211, 5.61803 7.93893, 9.04508 5, 7 2.06107, 9.04508 3.09789, 5.61803 0.24472, 3.45492 3.82443, 3.38197" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star6 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,10">        <polygon fill="#20df20" points="5, 0 5.65, 3.87417 9.33013, 2.5 6.3, 5 9.33013, 7.5 5.65, 6.12583 5, 10 4.35, 6.12583 0.66987, 7.5 3.7, 5 0.66987, 2.5 4.35, 3.87417" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star7 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,9.50484">        <polygon fill="#20df9f" points="5, 0 5.65083, 3.64855 8.90916, 1.88255 6.46239, 4.66622 9.87464, 6.1126 6.17275, 5.93523 7.16942, 9.50484 5, 6.5 2.83058, 9.50484 3.82725, 5.93523 0.12536, 6.1126 3.53761, 4.66622 1.09084, 1.88255 4.34917, 3.64855" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star8 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,10">        <polygon fill="#209fdf" points="5, 0 5.8419, 2.96747 8.53553, 1.46447 7.03253, 4.1581 10, 5 7.03253, 5.8419 8.53553, 8.53553 5.8419, 7.03253 5, 10 4.1581, 7.03253 1.46447, 8.53553 2.96747, 5.8419 0, 5 2.96747, 4.1581 1.46447, 1.46447 4.1581, 2.96747" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star9 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,9.69846">        <polygon fill="#2020df" points="5, 0 5.59854, 3.35554 8.21394, 1.16978 6.51554, 4.125 9.92404, 4.13176 6.72341, 5.30388 9.33013, 7.5 6.12488, 6.34058 6.7101, 9.69846 5, 6.75 3.2899, 9.69846 3.87512, 6.34058 0.66987, 7.5 3.27659, 5.30388 0.07596, 4.13176 3.48446, 4.125 1.78606, 1.16978 4.40146, 3.35554" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star10 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,10">        <polygon fill="#9f20df" points="5, 0 5.71074, 2.81257 7.93893, 0.95492 6.86074, 3.64809 9.75528, 3.45492 7.3, 5 9.75528, 6.54508 6.86074, 6.35191 7.93893, 9.04508 5.71074, 7.18743 5, 10 4.28926, 7.18743 2.06107, 9.04508 3.13926, 6.35191 0.24472, 6.54508 2.7, 5 0.24472, 3.45492 3.13926, 3.64809 2.06107, 0.95492 4.28926, 2.81257" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star11 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 10,10">        <polygon fill="#df209f" points="5, 0 5.61803, 3.09789 7.93893, 0.95492 6.61803, 3.82443 9.75528, 3.45492 7, 5 9.75528, 6.54508 6.61803, 6.17557 7.93893, 9.04508 5.61803, 6.90211 5, 10 4.38197, 6.90211 2.06107, 9.04508 3.38197, 6.17557 0.24472, 6.54508 3, 5 0.24472, 3.45492 3.38197, 3.82443 2.06107, 0.95492 4.38197, 3.09789" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star12 {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 200,200">        <polygon fill="#b81414" points="100, 0 113.29693, 16.04649 130.9017, 4.89435 138.58919, 24.26445 158.77853, 19.0983 160.10408, 39.89592 180.9017, 41.22147 175.73555, 61.41081 195.10565, 69.0983 183.95351, 86.70307 200, 100 183.95351, 113.29693 195.10565, 130.9017 175.73555, 138.58919 180.9017, 158.77853 160.10408, 160.10408 158.77853, 180.9017 138.58919, 175.73555 130.9017, 195.10565 113.29693, 183.95351 100, 200 86.70307, 183.95351 69.0983, 195.10565 61.41081, 175.73555 41.22147, 180.9017 39.89592, 160.10408 19.0983, 158.77853 24.26445, 138.58919 4.89435, 130.9017 16.04649, 113.29693 0, 100 16.04649, 86.70307 4.89435, 69.0983 24.26445, 61.41081 19.0983, 41.22147 39.89592, 39.89592 41.22147, 19.0983 61.41081, 24.26445 69.0983, 4.89435 86.70307, 16.04649" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.star-badge {
+  background-image: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0 200,200">        <polygon fill="#b81414" points="100, 0 113.29693, 16.04649 130.9017, 4.89435 138.58919, 24.26445 158.77853, 19.0983 160.10408, 39.89592 180.9017, 41.22147 175.73555, 61.41081 195.10565, 69.0983 183.95351, 86.70307 200, 100 183.95351, 113.29693 195.10565, 130.9017 175.73555, 138.58919 180.9017, 158.77853 160.10408, 160.10408 158.77853, 180.9017 138.58919, 175.73555 130.9017, 195.10565 113.29693, 183.95351 100, 200 86.70307, 183.95351 69.0983, 195.10565 61.41081, 175.73555 41.22147, 180.9017 39.89592, 160.10408 19.0983, 158.77853 24.26445, 138.58919 4.89435, 130.9017 16.04649, 113.29693 0, 100 16.04649, 86.70307 4.89435, 69.0983 24.26445, 61.41081 19.0983, 41.22147 39.89592, 39.89592 41.22147, 19.0983 61.41081, 24.26445 69.0983, 4.89435 86.70307, 16.04649" />      </svg>    ');
+  /* background-size: cover; */
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: rotate(-10deg);
+  display: table;
+  margin: auto;
+  font-size: 1.5em;
+  position: absolute;
+  top: -3em;
+  left: -3em;
+  /* Remove for Drop Shadow */
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35));
+  /**/
+}
+.star-badge > * {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.panel {
+  width: 21em;
+  padding: 2em;
+  font-size: 0.75em;
+  display: inline-block;
+  position: relative;
+  background-color: #eee;
+  border: 0.5em solid #bbb;
+  border-radius: 0.5em;
+}
+
+body {
+  background-color: #df9f20;
+  font-size: 0.8em;
+}
+
+/* Center */
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  width: 100%;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}

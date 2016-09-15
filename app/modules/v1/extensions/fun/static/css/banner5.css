@@ -1,0 +1,133 @@
+.card.list {
+    padding-right: 1px;
+    padding-left: 1px
+}
+
+.card {
+    overflow: hidden;
+    margin: 20px 10px;
+    border-radius: 2px;
+    background-color: #fff
+}
+
+.card {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3)
+}
+
+.card .item {
+    border-left: 0;
+    border-right: 0
+}
+
+.card .item:first-child {
+    border-top: 0
+}
+
+.card .item:last-child {
+    border-bottom: 0
+}
+
+.padding .card {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.card .item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px
+}
+
+.card .item:last-child {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px
+}
+
+.card .item:last-child {
+    margin-bottom: -1px
+}
+
+.card .item {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.ionic-body,
+body {
+-webkit-touch-callout: none;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+-webkit-text-size-adjust: none;
+-ms-text-size-adjust: none;
+text-size-adjust: none;
+-webkit-tap-highlight-color: transparent;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+overflow: hidden;
+margin: 0;
+padding: 0;
+color: #000;
+word-wrap: break-word;
+font-size: 14px;
+font-family: "Helvetica Neue", Roboto, "Segoe UI", sans-serif;
+line-height: 20px;
+text-rendering: optimizeLegibility;
+-webkit-backface-visibility: hidden;
+-webkit-user-drag: none;
+-ms-content-zooming: none
+}
+
+.item {
+border-color: #ddd;
+background-color: #FAFAFA;
+color: #444;
+position: relative;
+z-index: 2;
+display: block;
+margin: -1px;
+padding: 16px;
+border-width: 1px;
+border-style: solid;
+font-size: 16px
+}
+
+.item h2 {
+margin: 0 0 2px;
+font-size: 16px;
+font-weight: 400
+}
+
+.item h3 {
+margin: 0 0 4px;
+font-size: 14px
+}
+
+.item h4 {
+margin: 0 0 4px;
+font-size: 12px
+}
+
+.item h5,
+.item h6 {
+margin: 0 0 3px;
+font-size: 10px
+}
+
+.item p {
+color: #666;
+font-size: 14px;
+margin-bottom: 2px
+}
+
+.item {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap
+}

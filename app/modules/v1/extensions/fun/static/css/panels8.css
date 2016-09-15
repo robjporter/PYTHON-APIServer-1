@@ -1,0 +1,4 @@
+* {box-sizing: border-box;}
+html , body { width: 100%; height: 100%; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; font-size: 14px; background-color: #eeeeee; color: #949494; }
+fieldset { border: 0; margin: 0 0 2em 0; padding: 1em; background-color: #f7f7f7; box-shadow: 0 0 5px rgba(0,0,0,0.2); overflow: hidden; border-radius: 0.3em; }
+fieldset > h3 { font-weight: 500; font-size: 1.2em; background-color: #FFF; margin: -0.824em -0.824em 0.824em -0.824em; padding: 1em; box-shadow: 0 0 3px rgba(0,0,0,0.1); border-radius: 0.3em 0.3em 0 0; }

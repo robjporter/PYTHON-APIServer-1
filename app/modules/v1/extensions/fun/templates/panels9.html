@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link href="{{ url_for( 'fun.static', filename = 'css/panels9.css' )}}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+<aside class="profile-card">
+
+  <header>
+
+    <!-- here’s the avatar -->
+    <a href="http://tutsplus.com">
+      <img src="{{ url_for( 'fun.static', filename = 'images/465321Preview3.png' )}}">
+    </a>
+
+    <!-- the username -->
+    <h1>Aladin Ben Sassi</h1>
+
+    <!-- and role or location -->
+    <h2>Fullstack developer</h2>
+
+  </header>
+
+  <!-- bit of a bio; who are you? -->
+  <div class="profile-bio">
+
+    <p>I'm a Freelance FullStack Web developer from Tunisia. <br>I started learning web development since i was 13 and have fallen in love with it ever since. I love creating fun stuff on codepen and showing people how powerful CSS truly is</p>
+
+  </div>
+
+  <!-- some social links to show off -->
+  <ul class="profile-social-links">
+
+    <!-- twitter - el clásico  -->
+    <li>
+      <a href="https://twitter.com/BenSassiAladin">
+        <img src="{{ url_for( 'fun.static', filename = 'images/social-twitter.svg' )}}">
+      </a>
+    </li>
+
+    <!-- envato – use this one to link to your marketplace profile -->
+    <li>
+      <a href="http://themeforest.net/user/Kiraken">
+        <img src="{{ url_for( 'fun.static', filename = 'images/social-envato.svg' )}}">
+      </a>
+    </li>
+
+    <!-- codepen - your codepen profile-->
+    <li>
+      <a href="http://codepen.io/kiraken/">
+        <img src="{{ url_for( 'fun.static', filename = 'images/social-codepen.svg' )}}">
+      </a>
+    </li>
+
+    <!-- add or remove social profiles as you see fit -->
+
+  </ul>
+</body>
+</html>

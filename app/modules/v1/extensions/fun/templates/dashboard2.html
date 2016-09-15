@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <link href="{{ url_for('bower.static', filename='font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for( 'fun.static', filename = 'css/dashboard2.css' )}}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div>
+  <nav role='navigation'>
+    <ul>
+      <li><a href="#">
+        <i class="fa fa-desktop"></i>Dashboard
+      </a></li>
+      <li><a href="#">
+        <i class="fa fa-bar-chart"></i>Analytics
+      </a></li>
+      <li><a href="#">
+        <i class="fa fa-film"></i>Media
+      </a></li>
+      <li><a href="#">
+        <i class="fa fa-comments"></i>Comments
+      </a></li>
+      <li><a href="#">
+        <i class="fa fa-columns"></i>Widgets
+      </a></li>
+      <li><a href="#">
+        <i class="fa fa-calendar"></i>Planner
+      </a></li>
+      <li><a href="#">
+        <i class="fa fa-file-text-alt"></i>Report
+      </a></li>
+      <li><a href="#">
+        <i class="fa fa-arrow-right"></i>Directions
+      </a></li>
+    </ul>
+  </nav>
+  <div>
+    <div class="top-bar">
+      <form class="search">
+        <input type="search" placeholder="Search">
+        <button class="icon-search"></button>
+      </form>
+      <div>
+        <div>
+          <img src="http://gravatar.com/avatar/141af5ff80a1541d755c97f9c7a3281c?s=80">
+          <span class="desktop">Welcome, </span><span class="tablet">Ashley Wright</span>
+        </div>
+        <button class="fa fa-envelope"></button>
+        <button class="fa fa-bell"></button>
+        <button class="fa fa-gear"></button>
+      </div>
+      <button><i class="fa fa-signout"></i><span class="desktop">Logout</span></button>
+    </div>
+    <div class="page">
+      <div id="main">
+        <h1>Dashboard</h1>
+        <canvas></canvas>
+        <h2>
+          Recent Activity
+          <a href="#">See All <i class="fa fa-chevron-right"></i></a>
+        </h2>
+      </div>
+      <aside>
+        <div class="widget featured">
+          <h2>Balance</h2>
+          <p>£14,679</p>
+        </div>
+        <div class="widget">
+          <header>
+            <h2>Quick Links</h2>
+          </header>
+          <menu type="list">
+            <li><a href="#">New Tasks <i class="fa fa-bookmark"></i></a></li>
+            <li><a href="#">Activity <i class="fa fa-location-arrow"></i></a></li>
+            <li><a href="#">Parameters <i class="fa fa-gear"></i></a></li>
+            <li><a href="#">My Cards <i class="fa fa-credit-card"></i></a></li>
+            <li><a href="#">Users <i class="fa fa-group"></i></a></li>
+          </menu>
+        </div>
+        <form class="widget">
+          <header>
+            <h2>Customer Support?</h2>
+          </header>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Comments"></textarea>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </aside>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
