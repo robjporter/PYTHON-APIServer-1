@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1 "Open Sans", sans-serif;
+}
+
+.panel {
+  width: 100%;
+  max-width: 35em;
+  background: #fff;
+  border-radius: 3px;
+  margin: 1em auto;
+}
+.panel .panel--headline {
+  padding: 1em .5em;
+}
+.panel .panel__body {
+  padding: 1em .5em;
+}
+.panel .pannel--image {
+  width: 100%;
+  display: block;
+}
+
+.panel {
+  border: 1px solid #ddd;
+}
+.panel .panel--headline {
+  background: #ddd;
+}
+
+.panel--special {
+  border: 1px solid deeppink;
+}
+.panel--special .panel--headline {
+  background: deeppink;
+  color: white;
+}
+
+.panel--error {
+  border: 1px solid #ff4d4d;
+}
+.panel--error .panel--headline {
+  background: #ff4d4d;
+  color: white;
+}

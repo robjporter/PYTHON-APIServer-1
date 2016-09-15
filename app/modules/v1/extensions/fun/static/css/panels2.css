@@ -1,0 +1,36 @@
+/* * * * * Variables * * * * */
+/* * * * * Styles * * * * */
+.panel {
+  background: #eee;
+  overflow: hidden;
+  margin: 0.5em auto;
+  border-radius: 0.5em;
+}
+.panel h3 {
+  background: #08c;
+  font-size: 1em;
+  color: #fff;
+  margin: 0;
+  padding: 1em;
+}
+.panel.second h3 {
+  background: #ff894a;
+}
+.panel.third h3 {
+  background: #9bb24c;
+}
+.panel .container {
+  padding: 0 1em 1em;
+}
+
+#wrapper {
+  max-width: 20em;
+  margin: 2em auto;
+}
+
+@media screen and (max-width: 40em) {
+  #wrapper {
+    max-width: 100%;
+    margin: 2em 1em;
+  }
+}

@@ -1,0 +1,161 @@
+html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+}
+body {
+  position: relative;
+  font-size: 1.1em;
+  background-color: #003;
+}
+ul:nth-of-type(1),
+ul:nth-of-type(2),
+ul:nth-of-type(3) {
+  margin-top: 1em;
+}
+.black {
+  color: #000;
+}
+ul {
+  display: block;
+  list-style-type: none;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+li {
+  margin-left: 0;
+  padding: 0;
+}
+.text li:hover {
+  transform: scale(1.4, 1.2);
+}
+.justify {
+  min-width: 100%;
+}
+.btn {
+  background-color: #fff;
+  border: 2px ridge #000;
+  border-radius: 8%;
+  font-weight: bold;
+  color: #000;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #e5e5e5;
+  color: #000;
+}
+.label {
+  border: 2px ridge #000;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+}
+.fixed {
+  display: block;
+  position: fixed;
+  left: -0.5em;
+  top: 2em;
+}
+.fixed hr {
+  border-top: 0;
+}
+#smoke {
+  color: rgba(210,210,210,0.5);
+  text-shadow: 0 0 4px #000, -1px 1px 3px rgba(190,190,190,0.7), 1px -1px 3px rgba(190,190,190,0.7), 2px -2px 3px rgba(190,190,190,0.7), -2px 2px 3px rgba(190,190,190,0.7);
+}
+#smoke2 {
+  color: rgba(204,204,204,0.2);
+  text-shadow: -2px -2px 15px rgba(105,105,105,0.5), -3px 2px 15px rgba(100,149,237,0.6), -3px 2px 15px rgba(255,255,255,0.7), -5px -8px 20px rgba(105,105,105,0.4);
+}
+#smoke3 {
+  color: rgba(204,204,204,0.45);
+  text-shadow: -2px -2px 15px rgba(105,105,105,0.5), -3px 2px 15px rgba(100,149,237,0.6), -3px 2px 15px rgba(255,255,255,0.7), -5px -8px 20px rgba(105,105,105,0.4);
+}
+#flame {
+  color: rgba(204,0,0,0.99);
+  text-shadow: 0 0 3px rgba(255,255,0,0.9), -2px 1px 5px rgba(255,77,51,0.9), -15px -10px 15px rgba(255,69,0,0.8), -10px -10px 10px #ffae34, 10px 10px 10px #ec760c;
+}
+#flame2 {
+  color: rgba(220,0,0,0.6);
+  text-shadow: 0 0 2px rgba(255,0,0,0.8), -1px 1px 4px rgba(255,255,0,0.9), 1px 0 4px rgba(255,255,0,0.9), 0 0 1px rgba(0,0,0,0.8), 1px -1px 2px rgba(255,0,0,0.9), -1px 1px 2px rgba(255,0,0,0.9), -10px -10px 10px rgba(255,69,0,0.6), 10px 10px 10px rgba(255,69,0,0.6);
+}
+#kandy {
+  color: rgba(255,0,204,0.99);
+  text-shadow: -2px 2px 3px #0f0, 0 0 20px #0f0, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+}
+#kandy2 {
+  color: rgba(255,10,200,0.6);
+  text-shadow: -1px 1px 3px rgba(255,255,80,0.8), 1px -1px 3px rgba(255,255,80,0.8), 0 0 20px rgba(0,255,80,0.8), 0 0 40px rgba(255,0,204,0.8), 0 0 50px rgba(255,0,204,0.8), 0 0 60px rgba(255,0,204,0.8);
+}
+#pearl {
+  color: #fff;
+  text-shadow: -1px -1px 0 #333, -4px 1px 0 #ff4500, -3px 1px 0 #f00, -2px 1px 0 #ff8c00;
+}
+#pearl2 {
+  color: rgba(0,0,0,0.6);
+  text-shadow: 0 0 1px rgba(255,0,0,0.7), 1.5px -1.5px 2px rgba(255,100,0,0.9), -1.5px 1.5px 2px rgba(255,100,0,0.9);
+}
+#pearl3 {
+  color: rgba(255,255,255,0.7);
+  text-shadow: -1px -1px 1px rgba(230,230,200,0.6), 1px 1px 1px rgba(230,230,200,0.6), -1.5px -1.5px 1.5px rgba(230,230,200,0.6), 1.5px 1.5px 1.5px rgba(230,230,200,0.6), -2px -2px 2px rgba(220,220,200,0.7), 2px 2px 2px rgba(220,220,200,0.7), -2.5px -2.5px 2px rgba(230,200,200,0.7), 2.5px 2.5px 2px rgba(230,200,200,0.7);
+}
+#pinstripe {
+  color: rgba(0,0,0,0.8);
+  text-shadow: -2px -2px 0px rgba(0,153,200,0.9), 2px 2px 0px rgba(0,153,200,0.9), 3px 2px 0px rgba(0,80,255,0.9), -3px -2px 0px rgba(0,80,255,0.9);
+}
+#pinstripe2 {
+  color: rgba(0,0,0,0.6);
+  text-shadow: 0 0 2px rgba(255,20,11,0.7), -1px 1px 1px rgba(100,250,11,0.8), -1.5px 2px 1px rgba(100,250,11,0.8), 1.5px -2px 1px rgba(100,250,11,0.8);
+}
+#stencil {
+  color: rgba(5,0,5,0.5);
+  text-shadow: 0 0 1px rgba(190,100,0,0.8), -1.5px 1.5px 1px #ff0, 1.5px -1.5px 1px #ff0;
+}
+#stencil2 {
+  color: rgba(55,55,55,0.5);
+  text-shadow: -1px -1px 3px rgba(55,55,55,0.7), -2px 1px 0.4em rgba(255,69,0,0.7), -2px 1px 1px rgba(255,0,0,0.8);
+}
+#stencil3 {
+  color: rgba(0,0,50,0.8);
+  text-shadow: -2px -2px 0 rgba(0,0,200,0.9), 2px 2px 0 rgba(0,0,200,0.9), 3px 2px 0 rgba(0,80,255,0.9), -3px -2px 0 rgba(0,80,255,0.9);
+}
+#touchup {
+  color: rgba(0,0,0,0.7);
+  text-shadow: -2px 2px 2px rgba(14,220,0,0.9), 2px -2px 2px rgba(14,220,0,0.9);
+}
+#touchup2 {
+  color: rgba(0,220,250,0.5);
+  text-shadow: 0 0 2px rgba(200,250,250,0.8), -2px 2px 2px rgba(25,25,255,0.9), 2px -2px 2px rgba(25,25,255,0.9);
+}
+#touchup3 {
+  color: rgba(0,0,0,0.5);
+  text-shadow: 0 0 1px rgba(110,255,110,0.6), -2px 2px 0 #ff0, 2px -2px 0 #ff0;
+}
+#colormatch {
+  color: rgba(0,0,0,0.6);
+  text-shadow: -1px 1px 2px rgba(200,200,50,0.99), -2px 2px 2px rgba(200,200,50,0.99), 2px -2px 2px rgba(200,200,50,0.99);
+}
+#colormatch2 {
+  color: rgba(255,255,255,0.5);
+  text-shadow: 0 0 0 rgba(0,0,0,0.9), 0 0 2px rgba(250,250,250,0.9), 1px -1px 5px rgba(250,250,250,0.8), -1px 1px 5px rgba(250,250,250,0.8);
+}
+#chameleon {
+  color: rgba(255,255,255,0.5);
+  text-shadow: 1px 1px 1px rgba(15,20,115,0.9), 1px -1px 2px rgba(250,250,250,0.9), 1px -1px 5px rgba(250,250,250,0.8), -1px 1px 5px rgba(250,250,250,0.8);
+}
+.radio,
+.control-label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
