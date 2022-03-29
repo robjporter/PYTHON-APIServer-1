@@ -23,7 +23,7 @@ limits==1.1
 linecache2==1.0.0
 MarkupSafe==0.23
 metrics==0.2.6
-paramiko==1.16.0
+paramiko==2.10.1
 pathtools==0.1.2
 psutil==3.3.0
 py-bcrypt==0.4
